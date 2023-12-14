@@ -1,0 +1,386 @@
+body{
+    margin: 0px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(248, 241, 248);
+}
+
+#navbar{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.2), 0 6px 10px 0 rgba(87, 87, 87, 0.19);
+    z-index: 2;
+}
+
+#logo{
+    width: 200px;
+    height: auto;
+}
+
+#navbar-options-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+}
+
+#navbar-options-container li{
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 28px;
+    font-family: 'Bebas Neue';
+    font-weight: 600;
+}
+
+ul a{
+    color: black;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+ul a:hover{
+    color: rgb(124,77,159);
+}
+
+ul a::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: rgb(124,77,159);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+ul a:hover::after{
+    transform: scaleX(1);
+}
+
+#login-signup{
+    width: 200px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login i{
+    margin-right: 4px;
+}
+
+.signup i{
+    margin-right: 2px;
+}
+
+.blue-button{
+    background-color: rgb(29, 64, 218);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    width: auto;
+    min-width: 80px;
+    height: 35px;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+.blue-button:hover{
+    background-color: rgb(124,77,159);
+}
+
+.white-button{
+    background-color: #dbdbdb;
+    border: solid black 3px;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    width: auto;
+    min-width: 80px;
+    height: 35px;
+    font-weight: 750;
+    transition: 0.6s;
+}
+
+.white-button:hover{
+    background-color: rgb(88, 88, 88);
+}
+
+#main-hero{
+    font-family: 'Lato', sans-serif;
+    height: 600px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 100px 150px;
+    max-width: 1150px;
+}
+
+.left-side{
+    width: 50%;
+}
+
+.omni-in-headline, .nano-heat{
+    font-weight: 1000;
+    color: rgb(124,77,159);
+}
+
+.checklist ul{
+    font-family: 'Lato', sans-serif;
+}
+
+.checklist li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.checklist i{
+    margin-right: 10px;
+    color: rgb(124,77,159);
+}
+
+.left-side-content{
+    margin: 50px 50px 10px 50px;
+    max-width: 453.59px;
+}
+
+.descriptions p{
+    font-size: 1.3rem;
+}
+
+.main-hero-buttons{
+    margin-top: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-hero-buttons .contact-us i{
+    margin-right: 3px;
+}
+
+.main-hero-buttons .read-more i{
+    margin-right: 4px;
+}
+
+.right-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side-frame img{
+    height: 600px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 15px 10px rgb(124,77,159);
+}
+
+#omni-in-numbers{
+    margin: 50px 0px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./visuals/pexels-august-de-richelieu-4262413-edit.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#numbers-content{
+    width: 100%;
+    z-index: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.header-content{
+    font-family: 'Bebas Neue';
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.header span{
+    color: aliceblue;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.number{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.number .main{
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.number .subtext{
+    margin-top: 0px;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin: 50px 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(131,57,185,1) 95%);
+}
+
+.contact-us-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+}
+
+.contact-us-content-left{
+    height: 80%;
+    width: 50%;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-header{
+    font-size: 2.5rem;
+}
+
+.contact-description{
+    font-size: 1.7rem;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.contact-us-content-left .blue-button{
+    padding: 0 20px;
+    font-size: 1rem;
+}
+
+.contact-us-content-right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-frame{
+    width: 90%;
+    height: 80%;
+    background-image: url("./visuals/pexels-photomix-company-887751.jpg");
+    border-radius: 9px;
+    background-size: cover;
+}
+
+#footer{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(225, 216, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: 8fr 1fr;
+    font-family: 'Lato', sans-serif;
+    color: rgb(100, 100, 100)
+}
+
+.logo-side-footer > img{
+    width: 50%;
+}
+
+.text-side-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.footer-header{
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+hr {
+    max-width: 80%;
+    margin-left: 0;
+}
+
+.footer-text-links a{
+    display: block;
+    text-decoration: none;
+    color: rgb(100,100,100);
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.footer-text-partners p{
+    margin: 10px 0px;
+    font-size: 1.2rem;
+    max-width: 80%;
+}
+
+.footer-text-partners img{
+    height: 65%;
+    width: 65%;
+    border-radius: 8px;
+    border: solid 2px gray;
+}
+
+.bottom-footer{ 
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links a{
+    text-decoration: none;
+    margin: 0px 4px;
+    color: rgb(135, 139, 170);
+}
