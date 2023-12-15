@@ -1,5 +1,5 @@
 # OmniOven
-My first design based project.
+My first design based project: https://patrykdawidszczesniak.github.io/OmniOven/
 
 I'd like to point out that Omni Oven brand is absolutely fictional, and created by me (it was created because I didn't remember the Opti Grill name correctly).
 Right now the webpage only consists of main page and all the links used are attached directly to it, however in coming weeks I'm planning on adding more pages.
