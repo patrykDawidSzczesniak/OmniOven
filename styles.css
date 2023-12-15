@@ -201,7 +201,7 @@ ul a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./visuals/pexels-august-de-richelieu-4262413-edit.jpg");
+    background-image: url("./pexels-august-de-richelieu-4262413-edit.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -306,7 +306,7 @@ ul a:hover::after{
 .contact-frame{
     width: 90%;
     height: 80%;
-    background-image: url("./visuals/pexels-photomix-company-887751.jpg");
+    background-image: url("./pexels-photomix-company-887751.jpg");
     border-radius: 9px;
     background-size: cover;
 }
